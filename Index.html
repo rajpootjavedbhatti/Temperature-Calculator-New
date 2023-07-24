@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+</html>
+<body style="background-color: cyan;">
+    <script src="./Index.js"></script>
+    
+    <h1> <font size="7" style="background-color: rgba(139, 0, 116, 0.144);"> <center> Temperature Reader </center> </font></h1>
+   <p> <strong> <center> To find out temperature condition (Hot,Cold&Moderate), <br> Fill the given below box.</strong> </center> </p>
+    <br>
+    <div id="form">
+    <form onsubmit="cel();return false">
+        <label for="TemperatureInCelcius"><font size="10" style="background-color: black;"  rgba(233, 238, 238, 0.993);"><li><u>Mention Temperature In Celcius</u></li></font></label><b></b>
+      
+       <center> <input type="number"name="TemperatureInCelcius"id="TemperatureInCelcius"> </center>
+       
+        <center><button type="submit"onclick="cel()">Enter</button> 
+        <button type="reset">Clear</button> </center>
+    <br>
+    </form>
+    <form onsubmit="fer();return false">
+        <label for="TemperatureInFahrenheit"><font size="10" style="background-color: black;"><li><u>Mention temperature In Fahrenheit</u></li></font></label>
+
+     <center><input type="number"name="TemperatureInFahrenheit"id="TemperatureInFahrenheit">
+       <br>
+        <button type="submit"onclick=fer()>Enter</button>
+        <button type="reset">Clear</button> </center>
+        <center><h1>The Temperature you mentioned is </h1> </center>
+    <center><h2  id="change"></h2> </center>
+
+    </form>
+    </div>
+</body>
+</html>
